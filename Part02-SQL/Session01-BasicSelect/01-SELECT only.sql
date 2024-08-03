@@ -29,4 +29,6 @@ SELECT N'Ngô ' + N'Huỳnh Tấn Lộc' AS [My fullname is]
 -- 6. Tính tuổi
 SELECT YEAR(GETDATE()) - 2003 AS [My age is]
 
-SELECT N'Ngô ' + N'Huỳnh Tấn Lộc is ' + CONVERT(nvarchar, (YEAR(GETDATE()) - 2003)) + ' years old' AS [Introduction]
+SELECT N'Ngô ' + N'Huỳnh Tấn Lộc is ' + CONVERT(NVARCHAR, (YEAR(GETDATE()) - 2003)) + ' years old' AS [Introduction]
+
+SELECT N'Ngô ' + N'Huỳnh Tấn Lộc is ' + CAST((YEAR(GETDATE()) - 2003) AS NVARCHAR) + ' years old' AS [Introduction]
